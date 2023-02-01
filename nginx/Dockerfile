@@ -1,4 +1,11 @@
 FROM nginx:alpine
-COPY nginx.conf /etc/nginx/nginx.conf
+
+COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
+
 WORKDIR /usr/share/nginx/html
-COPY dist/apps/angularapp .
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+
+# COPY dist/apps/angularapp .

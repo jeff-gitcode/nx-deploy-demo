@@ -13,8 +13,8 @@ NX Deployment Demo for Client and Server
 - [x] Angular
 - [x] Docker
 - [x] Docker-Compose
+- [x] Nginx
 - [x] Kubernetes [TODO]
-- [x] Nginx [TODO]
 
 ![alt text](./doc/docker-desktop.JPG)
 
