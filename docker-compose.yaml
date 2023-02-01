@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  angularapp:
+    image: angularapp
+    environment:
+      - NODE_ENV=development
+    ports:
+      - '4200:4200'
+    networks:
+      - dev-network
+  nextapp:
+    image: nextapp
+    environment:
+      - NODE_ENV=development
+    ports:
+      - '3000:3000'
+    networks:
+      - dev-network   
+  nestapp:
+    image: nestapp
+    environment:
+      - NODE_ENV=development
+    ports:
+      - '3333:3333'
+    networks:
+      - dev-network
+
+networks:
+    dev-network:
