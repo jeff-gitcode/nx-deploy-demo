@@ -6,6 +6,8 @@ NX Deployment Demo for Client and Server
 - Nextjs (http://localhost:3000)
 - Nestjs (http://localhost:3333)
 
+## Tech Stack
+
 - [x] Nestjs
 - [x] Nextjs
 - [x] Angular
